@@ -1,0 +1,124 @@
+---
+title: "**Welcome!** <br><br> **MTH 202A: Calculus II**"
+subtitle: "Spring 2023 - University of Portland"
+---
+
+<br>
+
+## **Quick Content Guide**
+
+| Page                                         | Contents                                                                             |
+|----------------------------------------------|--------------------------------------------------------------------------------------|
+| [Home](index.html)          | -                                                                                    |
+| [Syllabus](syllabus.html)   | About the class, class materials and resources, class assessment and expectations |
+| [Topics](topics.html) | Tentative topics, notes, assignments, and books and online resources list        |
+| [Guides](guides.html) | Quick notes on topic such as the standard integrals and the series convergence tests.       |
+
+<br>
+
+## **Quick Facts**
+
+<br>
+
+### Instructor Information
+
+  * **Instructor:** [Alex John Quijano](https://www.alexjohnquijano.com/){target="_blank"} <br>
+  * **Office:** Buckley Center 279 <br>
+  * **Email:** quijano@up.edu <br>
+
+<br>
+
+### Class Time and Location
+
+  * **Lectures:** MWF 9:15 AM – 10:10 AM, Franz 234 <br>
+  * **Discussions:** Th 9:45 AM - 10:40 AM, Franz 222 <br>
+
+<br>
+
+### Final Exam
+
+  * **Final Exam:** May 4, Th 1:30 PM - 3:30 PM, Franz 234 <br>
+
+<br>
+
+### Help Hours
+
+* **Alex John Quijano (Instructor)**
+  * Walk-in (Buckley Center 279)
+    * TuTh, 4:00 PM - 5:00 PM
+  * One-to-One (Buckley Center 279 or in Teams) <br>
+    [[sign-up for a 30-minute session]](https://calendly.com/alexjohnquijano/quijano-sp23-scheduled-help-hours)
+      - Availability on TuTh, 11:00 AM - 4:00 PM 
+      - Availability on MWF, 2:00 PM - 4:00 PM
+
+<br>
+
+### Getting Help
+
+Don't hesitate to ask for assistance! I have help hours specifically in place because I want you to succeed, and the best place to connect with questions is one-on-one. If you can’t make it to my posted help hours, let me know and we can find another time. Other help options include:
+
+  * Post your question to the class Teams Question-Answering channel
+  * Get together with classmates to study together
+  * Drop by the Math Resource Center, which offers both drop-in and appointment-based tutoring.
+  * Google it. If you find a resource helpful, let me know.
+
+I understand that life happens, and illness, depression, family, relationships can disrupt our lives. When something arises, REACH OUT! I want to be able to support you in this course, and can only do so if you let me know.
+
+<br>
+
+### The Learning Commons
+
+Students can get academic assistance through Learning Commons tutoring services and workshops. The Co-Pilot peer tutoring program provides students with opportunities to work with other students to get help in writing, math, group projects, and other courses. Students can schedule an appointment to meet with a Co-Pilot (tutor) or they can also meet with a Co-Pilot during drop-in hours. Check the Learning Commons website [www.up.edu/learningcommons](https://www.up.edu/learningcommons/index.html) for more information. Find a tutor at the Learning Commons to get support on your academic journey.
+
+<br>
+
+### Math Resource Center
+
+Appointment-based tutoring starts week 1. Drop-in tutoring is Mon-Thurs, 3:00 PM - 6:30 PM in BC 163 and starts week 2. Visit the [Math Resource Center](https://www.up.edu/learningcommons/math-resource-center/index.html){target="_blank"} website with more info.
+
+<br>
+
+## **Quick Resources**
+
+<br>
+
+### Textbook
+
+The main textbook is [Calculus Volume 2 ](https://openstax.org/details/calculus-volume-2){target="_blank"} by Gilbert Strang, Edwin “Jed” Herman et. al. The textbook is free and open-source.
+
+<br>
+
+### Graphing Calculator
+
+We will be using Desmos as our online graphing calculator. Use your UP email to sign-up for a free Desmos account and join our Desmos class [MTH-202A: Calculus II Spring 2023 [Quijano]](https://student.desmos.com/?prepopulateCode=yrx8n9){target="_blank"}. If you need the Desmos class code, use **YRX8N9**.
+
+<br>
+
+### WeBWork
+
+We will be using WeBWork for homework assignments. You are already on WeBWork. So, you just need to log in using your UP credentials at [MTH202-Quijano-S23](https://webwork.up.edu/webwork2/MTH202A-S23/){target="_blank"}.
+
+<br>
+
+### Microsoft Teams
+
+We will be using Teams [mth-202a-sp23](https://teams.microsoft.com/l/team/19%3allIZY2hHKzLKeQbjL4XqrpzF6RCPXZ-VhsSTxIrrb1s1%40thread.tacv2/conversations?groupId=c326c2dc-6c52-4f13-b437-ef74df91b4f3&tenantId=ea8f3949-231c-40b6-a33f-56873af96f87){target="_blank"} as the main real-time communication tool for general announcements, assignment submissions, question-answering discussions, and direct messages. I added you to the Teams page already, so you just need to log in using your UP credentials. If not, then send a request when you log in. Let me know if you need any assistance. If you need the Teams code for this class, use **r5r6mis**.
+
+Please check the class Teams regularly. If you need to have Teams notifications sent to your email, please set up your email preferences within Teams.
+
+If you prefer communicating through email, note that I have set up an email filter for this course, and you must put the “MTH 202” keyword in your subject line. It is easy for me to get notice of your email if you put the keyword in the subject line. Concise and specific messages are helpful, so I know how I can best help you.
+
+<br>
+
+### The Learning Commons
+
+Students can get academic assistance through Learning Commons tutoring services and workshops. The Co-Pilot peer tutoring program provides students with opportunities to work with other students to get help in writing, math, group projects, and other courses. Students can schedule an appointment to meet with a Co-Pilot (tutor) or they can also meet with a Co-Pilot during drop-in hours. Check the [Learning Commons](https://www.up.edu/learningcommons/index.html) website for more information. Find a tutor at the Learning Commons to get support on your academic journey.
+
+<br>
+
+### Math Resource Center
+
+Appointment-based tutoring starts week 1. Drop-in tutoring is Mon-Thurs, 3:00 PM - 6:30 PM in BC 163 and starts week 2. Visit the [Math Resource Center](https://www.up.edu/learningcommons/math-resource-center/index.html){target="_blank"} website with more info.
+
+<br>
+

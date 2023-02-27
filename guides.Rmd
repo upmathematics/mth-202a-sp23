@@ -1,0 +1,32 @@
+---
+title: "**Calculus II Guides**"
+subtitle: "Spring 2023 - University of Portland"
+---
+
+<br>
+
+## Sequences and Series Convergence Tests
+
+[[pdf](guides/series-convergence-tests.pdf){target="_blank"}]
+
+## Integral Techniques
+
+[[pdf](guides/integral-techniques.pdf){target="_blank"}]
+
+## Integrals of Standard Functions
+
+[[pdf](guides/integrals-of-standard-functions.pdf){target="_blank"}]
+
+## Derivative Techniques
+
+[[pdf](guides/derivative-techniques.pdf){target="_blank"}]
+
+## Derivatives of Standard Functions
+
+[[pdf](guides/derivatives-of-standard-functions.pdf){target="_blank"}]
+
+## Integral Applications
+
+[[pdf](guides/integral-applications.pdf){target="_blank"})]
+
+<br>

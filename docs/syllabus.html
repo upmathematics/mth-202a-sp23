@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>MTH 202A Syllabus</title>
+
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MTH-202A</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="topics.html">topics</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="tba.html">Guides</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><strong>MTH 202A Syllabus</strong></h1>
+<h3 class="subtitle">Spring 2023 - University of Portland</h3>
+
+</div>
+
+
+<p><br></p>
+<div id="about-the-class" class="section level2">
+<h2><strong>About the Class</strong></h2>
+<p><br></p>
+<div id="course-title" class="section level3">
+<h3>Course Title</h3>
+<p>MTH 202A: Calculus II</p>
+<p><br></p>
+</div>
+<div id="description" class="section level3">
+<h3>Description</h3>
+<p>Students in this course will deepen their understanding of the
+foundational topics in calculus, including techniques of integration,
+applications of integration, and infinite sequences and series,
+including Taylor series. Ongoing emphasis on problem solving strategies
+and the development of mathematical communication.</p>
+<p><br></p>
+</div>
+<div id="core-statement" class="section level3">
+<h3>Core Statement</h3>
+<p>The University of Portland offers a liberal arts Core Curriculum with
+a vision of students acquiring knowledge, skills, and values that will
+prepare you to respond to the needs of the world and its human family,
+while having a foundation of multiple lenses to address enduring
+questions of human concern. The University Core Curriculum strives to
+achieve this vision by cultivating six habits of heart and mind in all
+graduates regardless of major. As a priority for this Core class, our
+focus is the “scientific and quantitative literacy and problem solving”
+habit.</p>
+<p>As part of developing that habit this course will prioritize students
+learning to employ mathematical and statistical skills to explore and
+make sense of data. Toward this end, as one specific Core learning
+outcome for this class, the expectation is that students who complete
+this course will be able to use the tools of differential calculus to
+solve complex problems and effectively communicate solutions in written
+form.</p>
+<p><br></p>
+</div>
+<div id="you-belong-here" class="section level3">
+<h3>You Belong Here</h3>
+<p>In our classroom, diversity and individual differences are respected,
+appreciated, and recognized as a source of strength. I support the use
+of mathematics as an analytic tool to challenge power, privilege, and
+oppression. It is our collective responsibility to create a welcoming
+space where ideas can be challenged while individuals are respected. I
+ask you to support one another as you develop as mathematicians and
+analytic thinkers.</p>
+<p><br></p>
+</div>
+<div id="instructor-information" class="section level3">
+<h3>Instructor Information</h3>
+<ul>
+<li><strong>Instructor:</strong> <a
+href="https://www.alexjohnquijano.com/" target="_blank">Alex John
+Quijano</a> <br></li>
+<li><strong>Office:</strong> Buckley Center 279 <br></li>
+<li><strong>Email:</strong> <a href="mailto:quijano@up.edu"
+class="email">quijano@up.edu</a> <br></li>
+</ul>
+<p><br></p>
+</div>
+<div id="class-time-and-location" class="section level3">
+<h3>Class Time and Location</h3>
+<ul>
+<li><strong>Lectures:</strong> MWF 9:15 AM – 10:10 AM, Franz 234
+<br></li>
+<li><strong>Discussions:</strong> Th 9:45 AM - 10:40 AM, Franz 222
+<br></li>
+</ul>
+<p><br></p>
+</div>
+<div id="final-exam" class="section level3">
+<h3>Final Exam</h3>
+<ul>
+<li><strong>Final Exam:</strong> May 4, Th 1:30 PM - 3:30 PM, Franz 234
+<br></li>
+</ul>
+<p><br></p>
+</div>
+<div id="help-hours" class="section level3">
+<h3>Help Hours</h3>
+<ul>
+<li><strong>Alex John Quijano (Instructor)</strong>
+<ul>
+<li>Walk-in (Buckley Center 279)
+<ul>
+<li>TuTh, 4:00 PM - 5:00 PM</li>
+</ul></li>
+<li>One-to-One (Buckley Center 279 or in Teams) <br> <a
+href="https://calendly.com/alexjohnquijano/quijano-sp23-scheduled-help-hours">[sign-up
+for a 30-minute session]</a>
+<ul>
+<li>Availability on TuTh, 11:00 AM - 4:00 PM</li>
+<li>Availability on MWF, 2:00 PM - 4:00 PM</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+<div id="lectures" class="section level3">
+<h3>Lectures</h3>
+<p>Lectures will occur synchronously during their scheduled time.</p>
+<p><br></p>
+</div>
+<div id="prerequisites" class="section level3">
+<h3>Prerequisites</h3>
+<p>MTH 201</p>
+<p><br></p>
+</div>
+<div id="learning-objectives" class="section level3">
+<h3>Learning Objectives</h3>
+<p><img src="images/mth-202-learning-objectives.png" width="100%" /></p>
+<p><br></p>
+</div>
+<div id="learning-outcomes" class="section level3">
+<h3>Learning Outcomes</h3>
+<p><img src="images/mth-202-learning-targets.png" width="85%" style="display: block; margin: auto;" /></p>
+<p>The * next to a learning target indicates a Core topic.</p>
+<p><br></p>
+</div>
+</div>
+<div id="academic-support" class="section level2">
+<h2><strong>Academic Support</strong></h2>
+<p><br></p>
+<div id="getting-help" class="section level3">
+<h3>Getting Help</h3>
+<p>Don’t hesitate to ask for assistance! I have help hours specifically
+in place because I want you to succeed, and the best place to connect
+with questions is one-on-one. If you can’t make it to my posted help
+hours, let me know and we can find another time. Other help options
+include:</p>
+<ul>
+<li>Post your question to the class Teams Question-Answering
+channel</li>
+<li>Get together with classmates to study together</li>
+<li>Drop by the Math Resource Center, which offers both drop-in and
+appointment-based tutoring.</li>
+<li>Google it. If you find a resource helpful, let me know.</li>
+</ul>
+<p>I understand that life happens, and illness, depression, family,
+relationships can disrupt our lives. When something arises, REACH OUT! I
+want to be able to support you in this course, and can only do so if you
+let me know.</p>
+<p><br></p>
+</div>
+<div id="collaboration-policy" class="section level3">
+<h3>Collaboration Policy</h3>
+<p>I expect you to participate in the class through lectures,
+discussion, labs, and other engagements. I also expect you to make use
+of opportunities to get help outside of class (help hours, Teams, email,
+tutoring) if you need help. Concise and specific messages are the most
+helpful so I know how I can best help you.</p>
+<p>Students are encouraged to participate in discussions with their
+peers (or each other) regarding homework and other assignments. However,
+each student must take responsibility and ownership of their work and
+submit their work individually.</p>
+<p><br></p>
+</div>
+<div id="help-hours-guidelines" class="section level3">
+<h3>Help Hours Guidelines</h3>
+<p>It is strongly recommended that you attend the walk-in help hours or
+set up a one-to-one meeting with the me if you feel like you are falling
+behind during our in-person class activities, or if you just need to
+clarify concepts discussed in class. In order to be more productive
+during a one-to-one meeting (or the walk-in help hours), these are three
+recommendations before you come in:</p>
+<ul>
+<li>List all gaps in knowledge you have (missed concepts) or list all
+concepts that were unclear to you during class. We will address them one
+by one.</li>
+<li>Prepare questions you want answered and be ready to show relevant
+materials.</li>
+<li>Regarding assignments, prepare to show (a) what are the steps you
+have tried and (b) what are the errors you encountered and the
+strategies you have tried.</li>
+</ul>
+<p>Note that these are recommendations so that you can get the most out
+of the help hours allocated for you. If you just want to come in and
+chat about something else, feel free to do so. If the dedicated time for
+one-to-one meeting does not work for you, send me a message to set up an
+appointment.</p>
+<p><br></p>
+</div>
+<div id="the-learning-commons" class="section level3">
+<h3>The Learning Commons</h3>
+<p>Students can get academic assistance through Learning Commons
+tutoring services and workshops. The Co-Pilot peer tutoring program
+provides students with opportunities to work with other students to get
+help in writing, math, group projects, and other courses. Students can
+schedule an appointment to meet with a Co-Pilot (tutor) or they can also
+meet with a Co-Pilot during drop-in hours. Check the <a
+href="https://www.up.edu/learningcommons/index.html">Learning
+Commons</a> website for more information. Find a tutor at the Learning
+Commons to get support on your academic journey.</p>
+<p><br></p>
+</div>
+<div id="math-resource-center" class="section level3">
+<h3>Math Resource Center</h3>
+<p>Appointment-based tutoring starts week 1. Drop-in tutoring is
+Mon-Thurs, 3:00 PM - 6:30 PM in BC 163 and starts week 2. Visit the <a
+href="https://www.up.edu/learningcommons/math-resource-center/index.html"
+target="_blank">Math Resource Center</a> website with more info.</p>
+<p><br></p>
+</div>
+<div id="accessibility-statement" class="section level3">
+<h3>Accessibility Statement</h3>
+<p>The University of Portland endeavors to make its courses and services
+fully accessible to all students. Students are encouraged to discuss
+with their instructors what might be most helpful in enabling them to
+meet the learning goals of the course. Students who experience a
+disability are also encouraged to use the services of the Office for
+Accessible Education Services (AES), located in the Shepard Academic
+Resource Center (503-943-8985). If you have an AES Accommodation Plan,
+you should make an appointment to meet with your faculty member to
+discuss how to implement your plan in this class. Requests for alternate
+location for exams and/or extended exam time should, where possible, be
+made two weeks in advance of an exam, and must be made at least one week
+in advance of an exam. Also, if applicable, you should meet with your
+faculty member to discuss emergency medical information or how best to
+ensure your safe evacuation from the building in case of fire or other
+emergency.</p>
+<p><br></p>
+</div>
+</div>
+<div id="class-materials-and-resources" class="section level2">
+<h2><strong>Class Materials and Resources</strong></h2>
+<p><br></p>
+<div id="class-website" class="section level3">
+<h3>Class Website</h3>
+<p>The syllabus, tentative topics schedule, lecture slides, assignments,
+and all other class materials are posted on the <a
+href="https://upmathematics.github.io/mth-202a-sp23/">course website</a>
+- the website can be viewed in Teams.</p>
+<p><br></p>
+</div>
+<div id="assignments" class="section level3">
+<h3>Assignments</h3>
+<ul>
+<li><p><strong>Homework:</strong> For most sections, you will be
+required to complete an online homework via WeBWork. Homework is due
+Monday, Wednesday, or Friday due 24-72 hours after it was posted.
+Homework is graded automatically. It is strongly suggested that you do
+your homework regularly; it’s best done following class, when it is
+fresh in your mind. Most questions allow unlimited attempts and there is
+no penalty for incorrect answers. If you find yourself stuck on a
+problem after many attempts, please reach out for additional
+help!</p></li>
+<li><p><strong>Proficiency Quizzes:</strong> Weekly proficiency quizzes
+provide opportunities to demonstrate your understanding of the course
+learning targets. Each quiz will include 2-3 learning targets as well as
+the option to reassess past targets. Proficiency should be attained
+twice for each <em>core</em> learning target. Most Quizzes are written
+and submitted in-person. Quizzes are conducted in class. Some quizzes
+can have specific notes open and some quizzes are closed notes.
+Electronic devices with or without access to the internet is not
+allowed. Quizzes must be submitted at the end of class.</p></li>
+<li><p><strong>Labs:</strong> Semi-weekly labs will be due on Wednesdays
+at end-of-day. Lab problems should be either typed or written and
+submitted as a pdf file in Teams Assignments. These labs are part of the
+Core Assessment, and will have common grading across all MTH 202
+sections. Labs will be graded on three components:</p>
+<ul>
+<li><em>Validity:</em> Is the method correct? Is the final solution
+correct?</li>
+<li><em>Explanation:</em> Is the solution method well explained? Is the
+reasonableness of the solution justified?</li>
+<li><em>Representation:</em> Is the solution process clearly written? Is
+the solution supported with appropriate graphs/diagrams/equations? Is
+mathematical notation used clearly and correctly?</li>
+</ul>
+<p>Labs can be hand-written or typed, but must be uploaded as a single
+pdf file. Late labs will be lowered one grade scale. If you had
+handwritten your answers/solutions on a physical paper, make sure to
+label it properly and please scan your document using a scanner app for
+convenience. Suggestions: (1) “Tiny Scanner” for Android or (2) “Scanner
+App” for iOS.</p>
+<p>To submit lab revisions, students must complete the following for
+each problem you missed:</p>
+<ul>
+<li>An explanation of the errors you made (A algebra? Graphs? Is there a
+specific concept?)</li>
+<li>Resolve the problem: be sure to include a clear explanation of your
+solution process so that another student in the class will
+understand</li>
+<li>Identify or create three difficult problems from this unit. (You can
+find/modify problems from in-class activities, webwork, the textbook,
+etc.) Solve each of the problems correctly, clearly describing your
+steps.</li>
+<li>Create a single PDF that includes (1) the previous lab, (2) the lab
+corrections, and (3) the additional practice problems.</li>
+</ul>
+<p>Revised labs can earn up to a score one point higher than the
+original score (thus a “Not yet proficient” lab can be revised into a
+“Proficient” lab.)</p></li>
+<li><p><strong>Final Exam:</strong> The final exam includes two
+components: a written assessment of the big mathematical ideas of the
+course. This assessment will be cumulative: it will focus on connections
+between ideas, conceptual understanding of the material, and
+applications rather than nitty-gritty computations. The second half of
+the final exam time will allow for reassessment of past learning
+objectives.</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="textbook" class="section level3">
+<h3>Textbook</h3>
+<p>The main textbook is <a
+href="https://openstax.org/details/calculus-volume-2"
+target="_blank">Calculus Volume 2</a> by Gilbert Strang, Edwin “Jed”
+Herman et. al. The textbook is free and open-source.</p>
+<p><br></p>
+</div>
+<div id="graphing-calculator" class="section level3">
+<h3>Graphing Calculator</h3>
+<p>We will be using Desmos as our online graphing calculator. Use your
+UP email to sign-up for a free Desmos account and join our Desmos class
+<a href="https://student.desmos.com/?prepopulateCode=yrx8n9"
+target="_blank">MTH-202A: Calculus II Spring 2023 [Quijano]</a>. If you
+need the Desmos class code, use <strong>YRX8N9</strong>.</p>
+<p><br></p>
+</div>
+<div id="webwork" class="section level3">
+<h3>WeBWork</h3>
+<p>We will be using WeBWork for homework assignments. You are already on
+WeBWork. So, you just need to log in using your UP credentials at <a
+href="https://webwork.up.edu/webwork2/MTH202A-S23/"
+target="_blank">MTH202-Quijano-S23</a>.</p>
+<p><br></p>
+</div>
+<div id="microsoft-teams" class="section level3">
+<h3>Microsoft Teams</h3>
+<p>We will be using Teams <a
+href="https://teams.microsoft.com/l/team/19%3allIZY2hHKzLKeQbjL4XqrpzF6RCPXZ-VhsSTxIrrb1s1%40thread.tacv2/conversations?groupId=c326c2dc-6c52-4f13-b437-ef74df91b4f3&amp;tenantId=ea8f3949-231c-40b6-a33f-56873af96f87"
+target="_blank">mth-202a-sp23</a> as the main real-time communication
+tool for general announcements, assignment submissions,
+question-answering discussions, and direct messages. I added you to the
+Teams page already, so you just need to log in using your UP
+credentials. If not, then send a request when you log in. Let me know if
+you need any assistance. If you need the Teams code for this class, use
+<strong>r5r6mis</strong>.</p>
+<p>Please check the class Teams regularly. If you need to have Teams
+notifications sent to your email, please set up your email preferences
+within Teams.</p>
+<p>If you prefer communicating through email, note that I have set up an
+email filter for this course, and you must put the “MTH 202” keyword in
+your subject line. It is easy for me to get notice of your email if you
+put the keyword in the subject line. Concise and specific messages are
+helpful, so I know how I can best help you.</p>
+<p><br></p>
+</div>
+</div>
+<div id="class-assessment" class="section level2">
+<h2><strong>Class Assessment</strong></h2>
+<p>This course is guided by the philosophy that learning mathematics
+requires focused effort, reflection, and revision. Assessment of this
+course is based on a proficiency system, in which students have multiple
+attempts to demonstrate proficiency, with opportunities to reflect on
+and improve previous understanding.</p>
+<p><br></p>
+<div id="assessment-disclosure-statement" class="section level3">
+<h3>Assessment Disclosure Statement</h3>
+<p>Student work products for this course may be used by the University
+for educational quality assurance purposes.</p>
+<p><br></p>
+</div>
+<div id="attendance-and-participation" class="section level3">
+<h3>Attendance and Participation</h3>
+<p>You are expected to actively participate in this classroom community.
+Participation includes coming to class on time, being prepared, being
+willing to ask questions and share ideas, setting up study groups
+outside of class, attending tutoring sessions, posting helpful resources
+online, and contributing to the Teams discussion channels. Exit cards
+will be assigned regularly at the conclusion of class as part of
+participation assessment. Group and individual presentations of ideas is
+a required component of participation. We will cover new course material
+on Monday, Wednesday, and Friday. Most Thursday class times will be for
+small group work on labs and for proficiency assessment.</p>
+<p><br></p>
+</div>
+<div id="grading" class="section level3">
+<h3>Grading</h3>
+<p><img src="images/mth-202-assessment-standards.png" width="100%" /></p>
+<p>Labs will be graded on completeness, validity of the mathematics, the
+clarity of the explanations, and the quality of the use of
+representations to illustrate the mathematics based on the rubric.
+Please see table below.</p>
+<p>Quizzes will be graded similarly as the labs.</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="9%" />
+<col width="18%" />
+<col width="23%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>1: Incomplete</strong></th>
+<th><strong>2: Not yet proficient</strong></th>
+<th><strong>3: Proficient</strong></th>
+<th><strong>4: Highly proficient</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Completeness</strong></td>
+<td><br>No work/minimal work</td>
+<td><br>Most problems attempted, some complete solutions</td>
+<td><br>Most problems completed with full solutions and all problems
+attempted<br> <br>All problems clearly labeled.</td>
+<td><br>All problems completed with full solution. All problems clearly
+labeled.</td>
+</tr>
+<tr class="even">
+<td><strong>Validity: Is the mathematics correct?</strong></td>
+<td><br>No or minimal correct mathematics</td>
+<td><br>Contains one or more conceptual errors or several minor
+errors.</td>
+<td><br>May contain a few minor errors but no big conceptual errors.
+Good use of mathematical language and symbols</td>
+<td><br>All parts of all problems mathematically valid: strong use of
+mathematical language and symbols</td>
+</tr>
+<tr class="odd">
+<td><strong>Representations: (Numbers, Symbols, Diagrams, Graphs,
+Words)</strong></td>
+<td><br>No or minimal use of representations</td>
+<td><br>Multiple representations present, but may not capture the
+mathematics clearly</td>
+<td><br>Multiple representations used appropriately</td>
+<td><br>Multiple representations are used when appropriate with clear
+links connecting the representations</td>
+</tr>
+<tr class="even">
+<td><strong>Explanations and alternate solution methods: Are the
+explanations clear and logical? Are multiple ways to solve the problem
+presented?</strong></td>
+<td><br>No or minimal explanation</td>
+<td><br>Explanations present, but incomplete or confusing. Alternate
+strategies are minimal.</td>
+<td><br>Strong explanations for most problems. Alternate solution
+strategies included when needed</td>
+<td><br>Strong explanations for every problem. Multiple solution paths
+included for some problems</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="final-grades" class="section level3">
+<h3>Final Grades</h3>
+<p><img src="images/mth-202-final-grades.png" width="100%" /></p>
+<p>Note that these percentages are guidelines more than hard and fast
+rules. I will consider the entire body of your work when making these
+determinations, and this will also be informed by your own
+self-assessments. I will never impose standards higher than those
+outlined in the table but reserve the right to round down the needed
+minimum percentages (in a way that favors you).</p>
+<p>Decisions about +/- cutoffs will be based on (a) your performance on
+the final assessment and (b) your achievements as a whole.</p>
+<p><br></p>
+</div>
+<div id="revisiting-your-work" class="section level3">
+<h3>Revisiting Your Work</h3>
+<p>Much of your work in this class can be revised. Everyone’s path to
+understanding is different but we all benefit from reflecting on our
+mistakes. Since much of the mathematical content will build on previous
+ideas, however, reflecting in a timely way is important (hence a
+one-week deadline).</p>
+<p>In addition to the regular in-class quizzes, you may re-assess any of
+the Learning Targets that we’ve covered through any either of the
+following methods:</p>
+<ul>
+<li>On quiz days there is additional time to retake additional Learning
+Target quizzes.</li>
+<li>You may schedule a retake on a particular Learning Target to be done
+during Help Hours in my office. This retake can be arranged to be done
+via conversation rather than written form.</li>
+<li>The final exam will be used for additional Learning Target retakes.
+University policy requires that students take the final exam at the time
+determined by the registrar.</li>
+</ul>
+<p>There are some restrictions on re-assessing using these methods:</p>
+<ul>
+<li>Reassessments must be completed within 4 weeks of the first
+scheduled assessment.</li>
+<li>A reassessment application must be submitted via email at least 24
+hours in advance of the reassessment time.</li>
+<li>Reassessment applications must include the name of the learning
+target and a copy of written corrections from the previous quiz.</li>
+<li>You may not do more than one re-assessment per learning target
+outside of class per week.</li>
+<li>No re-assessments will be given during finals week other than during
+the final exam time.</li>
+</ul>
+<p><em>Oral Exams:</em> At any time, students may be requested to
+complete an oral exam to explain or clarify their written work on labs
+or proficiency assessments. Such oral exams can impact a students’ grade
+on the given assessment.</p>
+<p><br></p>
+</div>
+<div id="late-assignments-and-incompletes" class="section level3">
+<h3>Late Assignments and Incompletes</h3>
+<p>You are expected to turn in all completed assignments on time.
+Circumstances that may disallow you to turn in your work on time – such
+as a medical reason – are understandable. Please let the instructor know
+if you are unable to submit your work and have missed the deadline way
+beyond its original posted date. Because every assignment is an
+important aspect of your learning in this class, we will discuss when
+you will turn in the assignment as well as decide upon an acceptable
+consequence for your turning it in late. I am committed to successfully
+helping you learn from this course.</p>
+<p><br></p>
+</div>
+</div>
+<div id="class-expectations" class="section level2">
+<h2><strong>Class Expectations</strong></h2>
+<p><br></p>
+<div id="classroom-norms" class="section level3">
+<h3>Classroom Norms</h3>
+<ul>
+<li><p>Follow assignment submission guidelines.</p></li>
+<li><p>Give your undivided attention to the class discussions.</p></li>
+<li><p>If you don’t agree with what someone else has to say, you are
+encouraged to express your point of view, but do so respectfully, and
+support your claims with textual evidence.</p></li>
+<li><p>Everyone has the right to be heard. Maintain confidentiality if a
+person decides to share a personal experience.</p></li>
+<li><p>No name calling and respect each person’s identity.</p></li>
+<li><p>One person speaks at a time. Give chances for other people to
+speak.</p></li>
+<li><p>Maintain the highest standards of excellence for both you and
+others.</p></li>
+<li><p>Possess the humility to understand that you are not an expert in
+everything and that everyone has room for improvement.</p></li>
+<li><p>Realize that each person will start with a distinct set of
+skills.</p></li>
+<li><p>Take care of yourself. If you need to step out of the classroom
+to have a moment to yourself - or go the bathroom - feel free to do
+so.</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="non-violence-statement" class="section level3">
+<h3>Non-Violence Statement</h3>
+<p>The University of Portland is committed to fostering a community free
+from all forms of violence in which all members feel safe and respected.
+Violence of any kind, and in particular acts of power-based personal
+violence, are inconsistent with our mission. Together, we take a stand
+against violence. Join us in learning more about campus and community
+resources, UP’s prevention strategy, and reporting options on the Green
+Dot website, <a href="www.up.edu/greendot"
+target="_blank">www.up.edu/greendot</a> or the Title IX website, <a
+href="www.up.edu/titleix" target="_blank">www.up.edu/titleix</a>.</p>
+<p><br></p>
+</div>
+<div id="academic-honor-principle" class="section level3">
+<h3>Academic Honor Principle</h3>
+<p>Academic integrity is openness and honesty in all scholarly
+endeavors. The University of Portland is a scholarly community dedicated
+to the discovery, investigation, and dissemination of truth, and to the
+development of the whole person. Membership in this community is a
+privilege, requiring each person to practice academic integrity at its
+highest level, while expecting and promoting the same in others.
+Breaches of academic integrity will not be tolerated and will be
+addressed by the community with all due gravity.</p>
+<p>In your written work, follow the conventions of an appropriate
+citation using the APA, MLA, CSE, or SIAM styles. Please consult with
+the instructor - or <a
+href="https://libguides.up.edu/guides/gethelp">Clark Library Research
+Guides</a> if you have questions about proper citations.</p>
+<p><br></p>
+</div>
+<div id="inclusion-and-diversity" class="section level3">
+<h3>Inclusion and Diversity</h3>
+<p>The natural and mathematical sciences are often viewed as objective
+disciplines. Science is a method for us to understand how the world
+works. However, it is historically built from a small set of privileged
+populations that often ignores the biases. I acknowledge that there may
+be some parts in this course that have overt and covert biases. Science
+is a human endeavor, and the pursuit of knowledge and skill must
+incorporate a diverse set of experiences.</p>
+<p>I value all students regardless of their background, country of
+origin, race, religion, ethnicity, sexual orientation, disability
+status, etc. I am are committed to providing a climate of excellence and
+inclusiveness within all aspects of this course. If you have any
+concerns, issues, or challenges, you are encouraged to discuss with the
+instructor (set up a meeting by email or a direct message in Teams) with
+the assurance of full confidentiality except for academic integrity code
+violations or sexual harassment (which I am obligated by law to
+report).</p>
+<p><br></p>
+</div>
+<div id="mental-health-statement" class="section level3">
+<h3>Mental Health Statement</h3>
+<p>As a college student, you may sometimes experience problems with your
+mental health that interfere with academic experiences and negatively
+impact daily life. If you or someone you know experiences mental health
+challenges at UP, please contact the University of Portland Health and
+Counseling Center in Orrico Hall (down the hill from Franz Hall and near
+Mehling Hall) at 503-943-7134 or <a href="mailto:hcc@up.edu"
+class="email">hcc@up.edu</a>. Their services are free and confidential,
+and if necessary they can provide same day appointments. In addition,
+phone counseling is available by calling 503-943-7134 and pressing 3.
+The University of Portland Campus Safety Department (503-943-4444) also
+has personnel trained to respond sensitively to mental health
+emergencies at all hours. Remember that getting help is a smart and
+courageous thing to do – for yourself, for those you care about, and for
+those who care about you.</p>
+<p><br></p>
+</div>
+<div id="covid-19-related-statements" class="section level3">
+<h3>COVID-19 Related Statements</h3>
+<p>Generally, students are expected to attend all class sessions
+according to the instructor’s direction. Students who feel unwell or
+have a temperature above 100 degrees should NOT attend class in person.
+These students should inform their instructor as soon as possible.</p>
+<p>Students who must be in isolation due to COVID-19 symptoms or a
+positive test should also contact their instructor as soon as possible
+to work out details for keeping up with the course material while in
+isolation.</p>
+<p>Should the instructor test positive for COVID-19, even without
+symptoms, the course will be temporarily conducted remotely. Should the
+instructor be unable to teach for an extended period of time, the
+respective department or unit will find a substitute to continue the
+course.</p>
+<p>Following current guidance from our county and state health
+authorities, face coverings are highly recommended in the classroom and
+all indoor spaces. As we move through the semester, however, classroom
+rules and procedures may change. All students and instructors must
+follow any University-wide COVID-19 rules and procedures that might be
+in put place at any given time during the semester for classrooms, labs,
+and all common areas of academic buildings. Such rules and procedures
+may include required face coverings, suggested distancing protocols and
+directions, and limitations on eating and drinking in the classroom,
+among other things. Failure to follow any of the COVID-19 classroom
+rules in place at the time could result in a student’s removal from the
+course and/or a report filed with the Office of Student Conduct.</p>
+<p><br></p>
+</div>
+<div id="ethics-of-information" class="section level3">
+<h3>Ethics of Information</h3>
+<p>The University of Portland is a community dedicated to the
+investigation and discovery of processes for thinking ethically and
+encouraging the development of ethical reasoning in the formation of the
+whole person. Using information ethically, as an element in open and
+honest scholarly endeavors, involves moral reasoning to determine the
+right way to access, create, distribute, and employ information
+including: considerations of intellectual property rights, fair use,
+information bias, censorship, and privacy. More information can be found
+in the Clark Library’s guide to the Ethical Use of Information at <a
+href="libguides.up.edu/ethicaluse"
+target="_blank">libguides.up.edu/ethicaluse</a>.</p>
+<p><br></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

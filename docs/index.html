@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Welcome!    MTH 202A: Calculus II</title>
+
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MTH-202A</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="topics.html">topics</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="tba.html">Guides</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><strong>Welcome!</strong> <br><br>
+<strong>MTH 202A: Calculus II</strong></h1>
+<h3 class="subtitle">Spring 2023 - University of Portland</h3>
+
+</div>
+
+
+<p><br></p>
+<div id="quick-content-guide" class="section level2">
+<h2><strong>Quick Content Guide</strong></h2>
+<table>
+<colgroup>
+<col width="34%" />
+<col width="65%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Page</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="index.html">Home</a></td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><a href="syllabus.html">Syllabus</a></td>
+<td>About the class, class materials and resources, class assessment and
+expectations</td>
+</tr>
+<tr class="odd">
+<td><a href="topics.html">Topics</a></td>
+<td>Tentative topics, notes, assignments, and books and online resources
+list</td>
+</tr>
+<tr class="even">
+<td><a href="guides.html">Guides</a></td>
+<td>Quick notes on topic such as the standard integrals and the series
+convergence tests.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="quick-facts" class="section level2">
+<h2><strong>Quick Facts</strong></h2>
+<p><br></p>
+<div id="instructor-information" class="section level3">
+<h3>Instructor Information</h3>
+<ul>
+<li><strong>Instructor:</strong> <a
+href="https://www.alexjohnquijano.com/" target="_blank">Alex John
+Quijano</a> <br></li>
+<li><strong>Office:</strong> Buckley Center 279 <br></li>
+<li><strong>Email:</strong> <a href="mailto:quijano@up.edu"
+class="email">quijano@up.edu</a> <br></li>
+</ul>
+<p><br></p>
+</div>
+<div id="class-time-and-location" class="section level3">
+<h3>Class Time and Location</h3>
+<ul>
+<li><strong>Lectures:</strong> MWF 9:15 AM – 10:10 AM, Franz 234
+<br></li>
+<li><strong>Discussions:</strong> Th 9:45 AM - 10:40 AM, Franz 222
+<br></li>
+</ul>
+<p><br></p>
+</div>
+<div id="final-exam" class="section level3">
+<h3>Final Exam</h3>
+<ul>
+<li><strong>Final Exam:</strong> May 4, Th 1:30 PM - 3:30 PM, Franz 234
+<br></li>
+</ul>
+<p><br></p>
+</div>
+<div id="help-hours" class="section level3">
+<h3>Help Hours</h3>
+<ul>
+<li><strong>Alex John Quijano (Instructor)</strong>
+<ul>
+<li>Walk-in (Buckley Center 279)
+<ul>
+<li>TuTh, 4:00 PM - 5:00 PM</li>
+</ul></li>
+<li>One-to-One (Buckley Center 279 or in Teams) <br> <a
+href="https://calendly.com/alexjohnquijano/quijano-sp23-scheduled-help-hours">[sign-up
+for a 30-minute session]</a>
+<ul>
+<li>Availability on TuTh, 11:00 AM - 4:00 PM</li>
+<li>Availability on MWF, 2:00 PM - 4:00 PM</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+<div id="getting-help" class="section level3">
+<h3>Getting Help</h3>
+<p>Don’t hesitate to ask for assistance! I have help hours specifically
+in place because I want you to succeed, and the best place to connect
+with questions is one-on-one. If you can’t make it to my posted help
+hours, let me know and we can find another time. Other help options
+include:</p>
+<ul>
+<li>Post your question to the class Teams Question-Answering
+channel</li>
+<li>Get together with classmates to study together</li>
+<li>Drop by the Math Resource Center, which offers both drop-in and
+appointment-based tutoring.</li>
+<li>Google it. If you find a resource helpful, let me know.</li>
+</ul>
+<p>I understand that life happens, and illness, depression, family,
+relationships can disrupt our lives. When something arises, REACH OUT! I
+want to be able to support you in this course, and can only do so if you
+let me know.</p>
+<p><br></p>
+</div>
+<div id="the-learning-commons" class="section level3">
+<h3>The Learning Commons</h3>
+<p>Students can get academic assistance through Learning Commons
+tutoring services and workshops. The Co-Pilot peer tutoring program
+provides students with opportunities to work with other students to get
+help in writing, math, group projects, and other courses. Students can
+schedule an appointment to meet with a Co-Pilot (tutor) or they can also
+meet with a Co-Pilot during drop-in hours. Check the Learning Commons
+website <a
+href="https://www.up.edu/learningcommons/index.html">www.up.edu/learningcommons</a>
+for more information. Find a tutor at the Learning Commons to get
+support on your academic journey.</p>
+<p><br></p>
+</div>
+<div id="math-resource-center" class="section level3">
+<h3>Math Resource Center</h3>
+<p>Appointment-based tutoring starts week 1. Drop-in tutoring is
+Mon-Thurs, 3:00 PM - 6:30 PM in BC 163 and starts week 2. Visit the <a
+href="https://www.up.edu/learningcommons/math-resource-center/index.html"
+target="_blank">Math Resource Center</a> website with more info.</p>
+<p><br></p>
+</div>
+</div>
+<div id="quick-resources" class="section level2">
+<h2><strong>Quick Resources</strong></h2>
+<p><br></p>
+<div id="textbook" class="section level3">
+<h3>Textbook</h3>
+<p>The main textbook is <a
+href="https://openstax.org/details/calculus-volume-2"
+target="_blank">Calculus Volume 2</a> by Gilbert Strang, Edwin “Jed”
+Herman et. al. The textbook is free and open-source.</p>
+<p><br></p>
+</div>
+<div id="graphing-calculator" class="section level3">
+<h3>Graphing Calculator</h3>
+<p>We will be using Desmos as our online graphing calculator. Use your
+UP email to sign-up for a free Desmos account and join our Desmos class
+<a href="https://student.desmos.com/?prepopulateCode=yrx8n9"
+target="_blank">MTH-202A: Calculus II Spring 2023 [Quijano]</a>. If you
+need the Desmos class code, use <strong>YRX8N9</strong>.</p>
+<p><br></p>
+</div>
+<div id="webwork" class="section level3">
+<h3>WeBWork</h3>
+<p>We will be using WeBWork for homework assignments. You are already on
+WeBWork. So, you just need to log in using your UP credentials at <a
+href="https://webwork.up.edu/webwork2/MTH202A-S23/"
+target="_blank">MTH202-Quijano-S23</a>.</p>
+<p><br></p>
+</div>
+<div id="microsoft-teams" class="section level3">
+<h3>Microsoft Teams</h3>
+<p>We will be using Teams <a
+href="https://teams.microsoft.com/l/team/19%3allIZY2hHKzLKeQbjL4XqrpzF6RCPXZ-VhsSTxIrrb1s1%40thread.tacv2/conversations?groupId=c326c2dc-6c52-4f13-b437-ef74df91b4f3&amp;tenantId=ea8f3949-231c-40b6-a33f-56873af96f87"
+target="_blank">mth-202a-sp23</a> as the main real-time communication
+tool for general announcements, assignment submissions,
+question-answering discussions, and direct messages. I added you to the
+Teams page already, so you just need to log in using your UP
+credentials. If not, then send a request when you log in. Let me know if
+you need any assistance. If you need the Teams code for this class, use
+<strong>r5r6mis</strong>.</p>
+<p>Please check the class Teams regularly. If you need to have Teams
+notifications sent to your email, please set up your email preferences
+within Teams.</p>
+<p>If you prefer communicating through email, note that I have set up an
+email filter for this course, and you must put the “MTH 202” keyword in
+your subject line. It is easy for me to get notice of your email if you
+put the keyword in the subject line. Concise and specific messages are
+helpful, so I know how I can best help you.</p>
+<p><br></p>
+</div>
+<div id="the-learning-commons-1" class="section level3">
+<h3>The Learning Commons</h3>
+<p>Students can get academic assistance through Learning Commons
+tutoring services and workshops. The Co-Pilot peer tutoring program
+provides students with opportunities to work with other students to get
+help in writing, math, group projects, and other courses. Students can
+schedule an appointment to meet with a Co-Pilot (tutor) or they can also
+meet with a Co-Pilot during drop-in hours. Check the <a
+href="https://www.up.edu/learningcommons/index.html">Learning
+Commons</a> website for more information. Find a tutor at the Learning
+Commons to get support on your academic journey.</p>
+<p><br></p>
+</div>
+<div id="math-resource-center-1" class="section level3">
+<h3>Math Resource Center</h3>
+<p>Appointment-based tutoring starts week 1. Drop-in tutoring is
+Mon-Thurs, 3:00 PM - 6:30 PM in BC 163 and starts week 2. Visit the <a
+href="https://www.up.edu/learningcommons/math-resource-center/index.html"
+target="_blank">Math Resource Center</a> website with more info.</p>
+<p><br></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
