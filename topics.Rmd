@@ -22,7 +22,7 @@ The "[\*]" column in the table below contains a number on which it refers to a n
 <br>
 
 | **Week** | **Day** |                               **Topic**                               |     **[CV2]**     |       **Learning Target**       |                     **WeBWork**                      |        **Lab**        |
-|:--------:|:--------:|:-------------:|:--------:|:--------:|:--------:|:--------:|
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |  **1**   | M 1/16  |                              *No Class*                               |        \-         |               \-                |                          \-                          |          \-           |
 |          | W 1/18  |                      Orientation & Introduction                       |     Syllabus      |               \-                |                          \-                          |          \-           |
 |          | Th 1/19 |                             5.1 Sequences                             |      Ch. 5.1      |               \-                |                          \-                          |          \-           |
@@ -72,7 +72,7 @@ The "[\*]" column in the table below contains a number on which it refers to a n
 |          | Th 4/6  |                                                                       |        \-         | PS1\* 2nd, PS2\* 2nd, PS3\* 2nd |                          \-                          |          \-           |
 |          |  F 4/7  |                              *No Class*                               |        \-         |               \-                |                          \-                          |          \-           |
 |  **13**  | M 4/10  |                              *No Class*                               |        \-         |               \-                |                          \-                          |          \-           |
-|          | W 4/12  |                                                                       |                   |                                 |                                                      |                       |
+|          | W 4/12  |                                                                       |                   |                                 |                                                      | Lab 4 Due, Lab 5 Open |
 |          | Th 4/13 |                              Assessment                               |                   |          A1, A2\*, A3           |                                                      |                       |
 |          | F 4/14  |                                                                       |                   |                                 |                                                      |                       |
 |  **14**  | M 4/17  |                                                                       |                   |                                 |                                                      |                       |
@@ -80,7 +80,7 @@ The "[\*]" column in the table below contains a number on which it refers to a n
 |          | Th 4/20 |                              Assessment                               |        \-         |         PP1\*, A2\* 2nd         |                          \-                          |          \-           |
 |          | F 4/21  |                                                                       |                   |                                 |                                                      |                       |
 |  **15**  | M 4/24  |                                                                       |                   |                                 |                                                      |                       |
-|          | W 4/26  |                                                                       |                   |                                 |                                                      |                       |
+|          | W 4/26  |                                                                       |                   |                                 |                                                      |       Lab 5 Due       |
 |          | Th 4/27 |                              Assessment                               |        \-         |      PP1\* 2nd, PP2, PP3\*      |                          \-                          |          \-           |
 |          | F 4/28  |                                Review                                 |        \-         |               \-                |                          \-                          |          \-           |
 |  **-**   | Th 5/4  |                              Final Exam                               |        \-         |               \-                |                          \-                          |          \-           |
