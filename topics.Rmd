@@ -22,7 +22,7 @@ The "[\*]" column in the table below contains a number on which it refers to a n
 <br>
 
 | **Week** | **Day** |                               **Topic**                               |     **[CV2]**     |       **Learning Target**       |                     **WeBWork**                      |        **Lab**        |
-|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|:--------:|:--------:|:-------------:|:--------:|:--------:|:--------:|:--------:|
 |  **1**   | M 1/16  |                              *No Class*                               |        \-         |               \-                |                          \-                          |          \-           |
 |          | W 1/18  |                      Orientation & Introduction                       |     Syllabus      |               \-                |                          \-                          |          \-           |
 |          | Th 1/19 |                             5.1 Sequences                             |      Ch. 5.1      |               \-                |                          \-                          |          \-           |
@@ -66,10 +66,10 @@ The "[\*]" column in the table below contains a number on which it refers to a n
 |  **11**  | M 3/27  |                        2.1 Area Between Curves                        |      Ch. 2.1      |               \-                |                          \-                          |          \-           |
 |          | W 3/29  |                         2.2 Volume by Slicing                         |      Ch. 2.2      |               \-                |                   Section 2.1 Due                    | Lab 3 Due, Lab 4 Open |
 |          | Th 3/30 |                              Assessment                               |        \-         |       PS1\*, PS2\*, PS3\*       |                          \-                          |          \-           |
-|          | F 3/31  |                      2.2 Volume by Slicing Cont.                      |        \-         |               \-                |                                                      |                       |
-|  **12**  |  M 4/3  |                                                                       |                   |                                 |                                                      |                       |
-|          |  W 4/5  |                                                                       |                   |                                 |                                                      |                       |
-|          | Th 4/6  |                                                                       |        \-         | PS1\* 2nd, PS2\* 2nd, PS3\* 2nd |                          \-                          |          \-           |
+|          | F 3/31  |                      2.2 Volume by Slicing Cont.                      |        \-         |               \-                |                          \-                          |          \-           |
+|  **12**  |  M 4/3  |                        2.3 Cylindrical Shells                         |      Ch. 2.3      |                                 |                   Section 2.2 Due                    |          \-           |
+|          |  W 4/5  |                     2.3 Cylindrical Shells Cont.                      |        \-         |                                 |                   Section 2.3 Due                    |          \-           |
+|          | Th 4/6  |                              Assessment                               |        \-         | PS1\* 2nd, PS2\* 2nd, PS3\* 2nd |                          \-                          |          \-           |
 |          |  F 4/7  |                              *No Class*                               |        \-         |               \-                |                          \-                          |          \-           |
 |  **13**  | M 4/10  |                              *No Class*                               |        \-         |               \-                |                          \-                          |          \-           |
 |          | W 4/12  |                                                                       |                   |                                 |                                                      | Lab 4 Due, Lab 5 Open |
