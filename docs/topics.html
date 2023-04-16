@@ -13,7 +13,7 @@
 
 <title>Tentative Topics Schedule</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -144,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -374,13 +371,13 @@ text book titled “Calculus Volume 2”.</p>
 <p><br></p>
 <table style="width:100%;">
 <colgroup>
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
+<col width="13%" />
+<col width="13%" />
+<col width="20%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -870,8 +867,8 @@ Due</td>
 <tr class="odd">
 <td align="center"><strong>14</strong></td>
 <td align="center">M 4/17</td>
-<td align="center">7.1 Parametric Equations</td>
-<td align="center">-</td>
+<td align="center">7.2 Calculus of Parametric Curves</td>
+<td align="center">Ch. 7.2</td>
 <td align="center">-</td>
 <td align="center">Section 7.1 Due</td>
 <td align="center">-</td>
@@ -879,8 +876,8 @@ Due</td>
 <tr class="even">
 <td align="center"></td>
 <td align="center">W 4/19</td>
-<td align="center">7.2 Calculus of Parametric Curves</td>
-<td align="center">Ch. 7.2</td>
+<td align="center">7.2 Calculus of Parametric Curves Cont.</td>
+<td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -897,8 +894,8 @@ Due</td>
 <tr class="even">
 <td align="center"></td>
 <td align="center">F 4/21</td>
-<td align="center">7.2 Calculus of Parametric Curves Cont.</td>
-<td align="center">-</td>
+<td align="center">7.3 Polar Coordinates</td>
+<td align="center">Ch. 7.3</td>
 <td align="center">-</td>
 <td align="center">Section 7.2 Due</td>
 <td align="center">-</td>
@@ -906,8 +903,8 @@ Due</td>
 <tr class="odd">
 <td align="center"><strong>15</strong></td>
 <td align="center">M 4/24</td>
-<td align="center">7.3 Polar Coordinates</td>
-<td align="center">Ch. 7.3</td>
+<td align="center">7.3 Polar Coordinates Cont.</td>
+<td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -915,8 +912,9 @@ Due</td>
 <tr class="even">
 <td align="center"></td>
 <td align="center">W 4/26</td>
-<td align="center">7.3 Polar Coordinates Cont.</td>
-<td align="center">-</td>
+<td align="center">3.6 Numerical Integration &amp; 7.4 Area and Arc
+Length in Polar Coordinates</td>
+<td align="center">Ch 3.6, Ch. 7.4</td>
 <td align="center">-</td>
 <td align="center">Section 7.3 Due</td>
 <td align="center">Lab 5 Due</td>
@@ -924,7 +922,7 @@ Due</td>
 <tr class="odd">
 <td align="center"></td>
 <td align="center">Th 4/27</td>
-<td align="center">Assessment</td>
+<td align="center">Assessment &amp; Reassessments</td>
 <td align="center">-</td>
 <td align="center">PP2, PP3*, PP3* 2nd</td>
 <td align="center">-</td>
@@ -942,7 +940,7 @@ Due</td>
 <tr class="odd">
 <td align="center"><strong>-</strong></td>
 <td align="center">Th 5/4</td>
-<td align="center">Final Exam</td>
+<td align="center">Final Exam &amp; Reassessments</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
